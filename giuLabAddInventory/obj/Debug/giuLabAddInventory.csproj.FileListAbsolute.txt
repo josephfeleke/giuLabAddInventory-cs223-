@@ -1,0 +1,11 @@
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\bin\Debug\giuLabAddInventory.exe.config
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\bin\Debug\giuLabAddInventory.exe
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\bin\Debug\giuLabAddInventory.pdb
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.csproj.AssemblyReference.cache
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.csproj.SuggestedBindingRedirects.cache
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.Form1.resources
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.Properties.Resources.resources
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.csproj.GenerateResource.cache
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.csproj.CoreCompileInputs.cache
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.exe
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.pdb
