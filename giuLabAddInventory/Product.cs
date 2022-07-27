@@ -15,10 +15,17 @@ namespace giuLabAddInventory
         public DateTime date { get; set; }
         public int price { get; set; }
 
+        static List<Product> products = new List<Product>();
 
-        public string save()
+      
+        public void save()
         {
-            return "Items has been added!";
+            products.Add(this);
+        }
+
+        public static List<Product> getAllProducts()
+        {
+            return products;
         }
 
     }

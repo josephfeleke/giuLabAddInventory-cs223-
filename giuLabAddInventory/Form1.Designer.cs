@@ -44,6 +44,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.mProductGridview = new System.Windows.Forms.DataGridView();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.mProductGridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_name
@@ -167,11 +175,34 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Inventory Number";
             // 
+            // mProductGridview
+            // 
+            this.mProductGridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.mProductGridview.Location = new System.Drawing.Point(30, 454);
+            this.mProductGridview.Name = "mProductGridview";
+            this.mProductGridview.RowHeadersWidth = 62;
+            this.mProductGridview.RowTemplate.Height = 28;
+            this.mProductGridview.Size = new System.Drawing.Size(855, 150);
+            this.mProductGridview.TabIndex = 16;
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataSource = typeof(giuLabAddInventory.Product);
+            // 
+            // productBindingSource1
+            // 
+            this.productBindingSource1.DataSource = typeof(giuLabAddInventory.Product);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(916, 644);
+            this.Controls.Add(this.mProductGridview);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -188,6 +219,10 @@
             this.Controls.Add(this.txt_name);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.mProductGridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,6 +245,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.BindingSource productBindingSource;
+        private System.Windows.Forms.BindingSource productBindingSource1;
+        private System.Windows.Forms.DataGridView mProductGridview;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
