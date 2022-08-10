@@ -45,13 +45,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.mProductGridview = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.chk_Availbility = new System.Windows.Forms.CheckBox();
+            this.chk_list = new System.Windows.Forms.CheckedListBox();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.mProductGridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt_name
@@ -185,6 +192,33 @@
             this.mProductGridview.Size = new System.Drawing.Size(855, 150);
             this.mProductGridview.TabIndex = 16;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // chk_Availbility
+            // 
+            this.chk_Availbility.AutoSize = true;
+            this.chk_Availbility.Location = new System.Drawing.Point(49, 323);
+            this.chk_Availbility.Name = "chk_Availbility";
+            this.chk_Availbility.Size = new System.Drawing.Size(115, 24);
+            this.chk_Availbility.TabIndex = 17;
+            this.chk_Availbility.Text = "Is Available";
+            this.chk_Availbility.UseVisualStyleBackColor = true;
+            // 
+            // chk_list
+            // 
+            this.chk_list.FormattingEnabled = true;
+            this.chk_list.Items.AddRange(new object[] {
+            "is good",
+            "is bad",
+            "is cool"});
+            this.chk_list.Location = new System.Drawing.Point(684, 282);
+            this.chk_list.Name = "chk_list";
+            this.chk_list.Size = new System.Drawing.Size(173, 96);
+            this.chk_list.TabIndex = 18;
+            this.chk_list.SelectedIndexChanged += new System.EventHandler(this.chk_list_SelectedIndexChanged);
+            // 
             // productBindingSource
             // 
             this.productBindingSource.DataSource = typeof(giuLabAddInventory.Product);
@@ -193,15 +227,59 @@
             // 
             this.productBindingSource1.DataSource = typeof(giuLabAddInventory.Product);
             // 
-            // errorProvider1
+            // groupBox1
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Location = new System.Drawing.Point(430, 292);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(205, 118);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(35, 88);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(126, 24);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(35, 55);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(126, 24);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(35, 25);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(126, 24);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 644);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.chk_list);
+            this.Controls.Add(this.chk_Availbility);
             this.Controls.Add(this.mProductGridview);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -220,9 +298,11 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.mProductGridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,6 +329,12 @@
         private System.Windows.Forms.BindingSource productBindingSource1;
         private System.Windows.Forms.DataGridView mProductGridview;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.CheckBox chk_Availbility;
+        private System.Windows.Forms.CheckedListBox chk_list;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 

@@ -15,6 +15,8 @@ namespace giuLabAddInventory
         public DateTime date { get; set; }
         public int price { get; set; }
 
+        public bool isAvailable { get; set; }
+
         static List<Product> products = new List<Product>();
 
       

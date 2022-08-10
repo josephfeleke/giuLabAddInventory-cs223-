@@ -27,7 +27,10 @@ namespace giuLabAddInventory
             }
             else
             {
-               
+                try { 
+                    int a = int.Parse(txt_inventoryNumber.Text);
+                    a = int.Parse(txt_price.Text);
+                    a = int.Parse(txt_count.Text);
 
                     if (r.IsMatch(txt_count.Text))
                     {
@@ -39,6 +42,17 @@ namespace giuLabAddInventory
                         product.count = int.Parse(txt_price.Text);
                         product.date = dateTimePicker.Value;
                         product.inventoryNumber = Convert.ToInt32(txt_inventoryNumber.Text);
+                        product.isAvailable = chk_Availbility.Checked;
+                        List<CheckBox> list2 = new List<CheckBox>();  
+                       // list2 = chk_list.CheckedItems;
+
+                        foreach (String item in chk_list.CheckedItems)
+                        {
+                            MessageBox.Show(item);
+                        }
+
+                       
+                        
                         product.save();
                         MessageBox.Show("Added successfully");
                         mProductGridview.DataSource = null;
@@ -49,10 +63,19 @@ namespace giuLabAddInventory
                         errorProvider1.SetError(txt_count, "must be a number");
                     }
                    
-               
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
                 
             }
 
+
+        }
+
+        private void chk_list_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

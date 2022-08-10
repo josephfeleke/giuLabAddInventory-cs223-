@@ -9,3 +9,4 @@ C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuL
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.csproj.CoreCompileInputs.cache
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.exe
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.pdb
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.login.resources
