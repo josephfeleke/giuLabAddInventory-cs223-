@@ -19,9 +19,9 @@ namespace giuLabAddInventory
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txt_password.Text == "123")
+            if (txt_password.Text == "1234" && txt_username.Text == "admin")
             {
-                Form1 form = new Form1();
+                Form1 form = new Form1(txt_username.Text);
                 form.Show();
                 this.Hide();
             }

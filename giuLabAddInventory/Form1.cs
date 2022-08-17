@@ -13,9 +13,10 @@ namespace giuLabAddInventory
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(string username)
         {
             InitializeComponent();
+            lbl_username.Text = username;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,12 +72,19 @@ namespace giuLabAddInventory
                 
             }
 
+            return productBindingSource.Find(p => p.name == name);
+
 
         }
 
         private void chk_list_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

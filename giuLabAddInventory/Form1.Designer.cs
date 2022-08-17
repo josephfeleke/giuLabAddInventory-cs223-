@@ -48,17 +48,18 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.chk_Availbility = new System.Windows.Forms.CheckBox();
             this.chk_list = new System.Windows.Forms.CheckedListBox();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.lbl_username = new System.Windows.Forms.Label();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.mProductGridview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt_name
@@ -120,6 +121,7 @@
             this.btn_cancel.TabIndex = 8;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // label1
             // 
@@ -219,14 +221,6 @@
             this.chk_list.TabIndex = 18;
             this.chk_list.SelectedIndexChanged += new System.EventHandler(this.chk_list_SelectedIndexChanged);
             // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(giuLabAddInventory.Product);
-            // 
-            // productBindingSource1
-            // 
-            this.productBindingSource1.DataSource = typeof(giuLabAddInventory.Product);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radioButton3);
@@ -272,11 +266,29 @@
             this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
+            // lbl_username
+            // 
+            this.lbl_username.AutoSize = true;
+            this.lbl_username.Location = new System.Drawing.Point(46, 24);
+            this.lbl_username.Name = "lbl_username";
+            this.lbl_username.Size = new System.Drawing.Size(51, 20);
+            this.lbl_username.TabIndex = 20;
+            this.lbl_username.Text = "Name";
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataSource = typeof(giuLabAddInventory.Product);
+            // 
+            // productBindingSource1
+            // 
+            this.productBindingSource1.DataSource = typeof(giuLabAddInventory.Product);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 644);
+            this.Controls.Add(this.lbl_username);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.chk_list);
             this.Controls.Add(this.chk_Availbility);
@@ -299,10 +311,10 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.mProductGridview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,6 +347,7 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label lbl_username;
     }
 }
 
