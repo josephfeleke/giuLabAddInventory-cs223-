@@ -16,7 +16,7 @@ namespace giuLabAddInventory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainContainer());
+            Application.Run(new Form1("admin"));
         }
     }
 }

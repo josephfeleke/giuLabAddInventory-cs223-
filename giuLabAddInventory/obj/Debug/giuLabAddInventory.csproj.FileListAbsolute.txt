@@ -4,10 +4,12 @@ C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\bin\Debug\giuL
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.csproj.AssemblyReference.cache
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.csproj.SuggestedBindingRedirects.cache
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.Form1.resources
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.Form2.resources
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.login.resources
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.mainContainer.resources
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.Properties.Resources.resources
+C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.UserControl1.resources
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.csproj.GenerateResource.cache
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.csproj.CoreCompileInputs.cache
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.exe
 C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.pdb
-C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.login.resources
-C:\Users\Felek\source\repos\giuLabAddInventory\giuLabAddInventory\obj\Debug\giuLabAddInventory.mainContainer.resources

@@ -13,6 +13,7 @@ namespace giuLabAddInventory
 {
     public partial class Form1 : Form
     {
+        Product product = new Product();
         public Form1(string username)
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace giuLabAddInventory
                     if (r.IsMatch(txt_count.Text))
                     {
                         errorProvider1.Clear();
-                        Product product = new Product();
+                        
                         product.name = txt_name.Text;
                         product.price = Convert.ToInt32(txt_price.Text);
                         product.itemName = txt_ItemName.Text;
@@ -44,16 +45,16 @@ namespace giuLabAddInventory
                         product.date = dateTimePicker.Value;
                         product.inventoryNumber = Convert.ToInt32(txt_inventoryNumber.Text);
                         product.isAvailable = chk_Availbility.Checked;
-                        List<CheckBox> list2 = new List<CheckBox>();  
-                       // list2 = chk_list.CheckedItems;
+                        /*List<CheckBox> list2 = new List<CheckBox>();  */
+                        // list2 = chk_list.CheckedItems;
 
-                        foreach (String item in chk_list.CheckedItems)
+                        /*foreach (String item in chk_list.CheckedItems)
                         {
                             MessageBox.Show(item);
-                        }
+                        }*/
 
-                       
-                        
+
+
                         product.save();
                         MessageBox.Show("Added successfully");
                         mProductGridview.DataSource = null;
@@ -72,7 +73,7 @@ namespace giuLabAddInventory
                 
             }
 
-            return productBindingSource.Find(p => p.name == name);
+           // return productBindingSource.Find(p => p.name == name);
 
 
         }
@@ -85,6 +86,13 @@ namespace giuLabAddInventory
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_viewProducts_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2(Product.getAllProducts());
+            form2.Show();
+           
         }
     }
 }

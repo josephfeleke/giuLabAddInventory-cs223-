@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace giuLabAddInventory
 {
-    internal class Product
+    public class Product
     {
         public string name { get; set; }
         public string itemName { get; set; }
@@ -17,7 +17,7 @@ namespace giuLabAddInventory
 
         public bool isAvailable { get; set; }
 
-        static List<Product> products = new List<Product>();
+        public static List<Product> products = new List<Product>();
 
       
         public void save()

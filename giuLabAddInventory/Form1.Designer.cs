@@ -55,6 +55,7 @@
             this.lbl_username = new System.Windows.Forms.Label();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btn_viewProducts = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mProductGridview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -215,7 +216,7 @@
             "is good",
             "is bad",
             "is cool"});
-            this.chk_list.Location = new System.Drawing.Point(684, 282);
+            this.chk_list.Location = new System.Drawing.Point(658, 228);
             this.chk_list.Name = "chk_list";
             this.chk_list.Size = new System.Drawing.Size(173, 96);
             this.chk_list.TabIndex = 18;
@@ -226,7 +227,7 @@
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(430, 292);
+            this.groupBox1.Location = new System.Drawing.Point(428, 212);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(205, 118);
             this.groupBox1.TabIndex = 19;
@@ -283,11 +284,22 @@
             // 
             this.productBindingSource1.DataSource = typeof(giuLabAddInventory.Product);
             // 
+            // btn_viewProducts
+            // 
+            this.btn_viewProducts.Location = new System.Drawing.Point(428, 376);
+            this.btn_viewProducts.Name = "btn_viewProducts";
+            this.btn_viewProducts.Size = new System.Drawing.Size(156, 34);
+            this.btn_viewProducts.TabIndex = 21;
+            this.btn_viewProducts.Text = "View Products";
+            this.btn_viewProducts.UseVisualStyleBackColor = true;
+            this.btn_viewProducts.Click += new System.EventHandler(this.btn_viewProducts_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 644);
+            this.Controls.Add(this.btn_viewProducts);
             this.Controls.Add(this.lbl_username);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.chk_list);
@@ -348,6 +360,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label lbl_username;
+        private System.Windows.Forms.Button btn_viewProducts;
     }
 }
 
