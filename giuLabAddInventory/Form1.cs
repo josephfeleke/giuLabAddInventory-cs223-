@@ -13,7 +13,7 @@ namespace giuLabAddInventory
 {
     public partial class Form1 : Form
     {
-        Product product = new Product();
+        
         public Form1(string username)
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace giuLabAddInventory
                     if (r.IsMatch(txt_count.Text))
                     {
                         errorProvider1.Clear();
-                        
+                        Product product = new Product();
                         product.name = txt_name.Text;
                         product.price = Convert.ToInt32(txt_price.Text);
                         product.itemName = txt_ItemName.Text;

@@ -36,7 +36,7 @@
             this.flowLayout.AutoScroll = true;
             this.flowLayout.Location = new System.Drawing.Point(2, 3);
             this.flowLayout.Name = "flowLayout";
-            this.flowLayout.Size = new System.Drawing.Size(452, 447);
+            this.flowLayout.Size = new System.Drawing.Size(418, 447);
             this.flowLayout.TabIndex = 1;
             // 
             // Form2
